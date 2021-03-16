@@ -8,8 +8,10 @@ build = "build.rs"
 repository = "https://github.com/crlf0710/libc-stdhandle"
 documentation = "https://docs.rs/libc-stdhandle"
 
-[dependencies]
-libc = "0.2"
+[dependencies.libc]
+#version = "0.2"
+version = "*"
+git = "https://github.com/tklebanoff/libc"
 
 [build-dependencies]
 cc = "1"
